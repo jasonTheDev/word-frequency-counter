@@ -3,12 +3,12 @@
 int 
 main(int argc, char *argv[]) {
 
-	// variables for: check for valid command line arguments
+	// variables for checking command line arguments
 	int sort_flag = 0;
 	int infile_flag = 0;
 	char *filepath;
 
-	// variables for: read file and create lengths list
+	// variables for reading file and creating lengths list
 	FILE *fp;
 	char *line = NULL;
 	size_t len = 0;
