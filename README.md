@@ -1,1 +1,5 @@
-"# word-frequency-counter" 
+# Word Frequency Counter
+
+Counts the frequency of words of different lengths in a given text file. Uses a linked list to manually allocate memory and accept inputs of very large sizes.
+
+
