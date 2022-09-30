@@ -51,14 +51,9 @@ main(int argc, char *argv[]) {
 		exit(FILE_ERROR_CODE);
 	}
 	while ((nread = getline(&line, &len, fp)) != -1) {
-		// printf("line: %s", line);	// for testing
 		char *token = strtok(line, DELIM);
 		while (token != NULL) {
-			// printf("token: %s\n", token);	// for testing
 			lengths = add_length_inorder(lengths, token, sort_flag);
-			// printf("first length is: %d\n", lengths->length);
-			// printf("first count is: %d\n", lengths->count);
-			// printf("first word is: %s\n", lengths->words->word);
 			token = strtok(NULL, DELIM);
 		}
 	}
@@ -73,7 +68,7 @@ main(int argc, char *argv[]) {
 	print_counts(lengths);
 
 	/*
-	 * free all malloc'ed memory
+	 * free memory used in linked list
 	 */
 	cleanup_lengths(lengths);
 
