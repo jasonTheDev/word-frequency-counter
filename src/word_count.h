@@ -34,7 +34,7 @@ typedef struct Length_Node {
 }length_node;
 
 
-size_t getline(char **lineptr, size_t *n, FILE *stream);    // doesn't compile -std=c99 without this
+size_t getline(char **lineptr, size_t *n, FILE *stream);    // to compile with -std=c99
 
 void *emalloc(size_t n);
 length_node *new_length(char *word);
